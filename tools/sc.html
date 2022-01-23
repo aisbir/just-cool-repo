@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <body id="page-top">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Another scoreboard editor" />
+        <meta name="author" content="password: #elitesmp_neverdie" />
         <title>Tools/sc</title>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <style>
-            .wrap-element {
-              position: relative;
-              overflow: hidden;
-              padding-top: 56.25%;
-            }
-            .wrapped-iframe {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              border: 0;
-            }
-          </style>
         <style>
             .anu {
                 position: absolute;
@@ -33,8 +17,9 @@
                 visibility: hidden;
             }
         </style>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="../favicon.ico" />
         <!-- UIkit CSS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.0/dist/css/uikit.min.css" />
 
 <!-- UIkit JS -->
@@ -43,7 +28,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-        <!-- Navigation-->
+    <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container px-4">
                 <a class="navbar-brand" href="#">Scoreboard editor</a>
@@ -65,12 +50,7 @@
                         <font color="white">
                             Welcome to Scoreboard editor
                         </font></b></h1>
-                <p class="lead">Beli premium untuk membuat akses tanpa limit setiap kamu mengetik kamu akan dikenakan 1 score dan jika sudah 150 tool akan otomatis reload jika kamu ingin menambah spasi kebawah kamu bisa menambahkan \n <a onclick="anubang()" href="#code">Have a code?</a></p>
-                <a class="btn btn-lg btn-light" href="#!"><span id="limit">0</span>/150 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
-                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
-                  </svg></a>
-                  
+                <p class="lead">Welcome to aisbirkun pages, disini kamu sedang di page scoreboard editor ya sekarang untuk fitur premium dihilangkan dan diganti menjadi template XD</a></p>
                 <hr>
                 <p>
                     <button class="uk-button uk-button-default" onclick="awikwok('tellraw'), limit()">tellraw</button>
@@ -78,16 +58,91 @@
                     <button class="uk-button uk-button-default" onclick="awikwok('text'), limit()">add text</button>
                     <button class="uk-button uk-button-default" onclick="awikwok('selector'), limit()">add selector</button>
                     <button class="uk-button uk-button-default" onclick="awikwok('score'), limit()">add score</button>
+                    <style>
+                        textarea{
+                             background-color: black;
+                             color: white;
+                              }
+                              textarea::placeholder{
+                               color: white;
+                                 }
+ 
+                    </style>
                 <div class="form-floating">
-                    <textarea class="form-control" id="anubanghehe" style="height: 200px" oninput="limit()"></textarea>
-                    <label for="floatingTextarea2">a</label>
+                    
+                    <textarea class="form-control" id="anubanghehe" style="resize: none;height: 200px;font-family: Hack, monospace;" oninput="limit()" onselect="line()"></textarea>
+                    <label>col <span id="limit">0</span> # <span id="counter">0</span>s /> - /tools/sc</label>
+                        <script type="text/javascript">
+                            function countdown() {
+                             var i = document.getElementById('counter');
+                             i.innerHTML = parseInt(i.innerHTML)+1;
+                            }
+                            
+                            setInterval(function(){ countdown(); },1000);
+                            </script>
                     <p>
-                          <button class="uk-button uk-button-default" onclick="ngopieuy()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                          <button class="btn btn-info" onclick="ngopieuy()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
                             <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
                             <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
                           </svg> Copy to clipboard</button> 
-                    </p>
-        </header>
+                    </p><hr></div>
+        </header> 
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Template scoreboard</h2>
+                        <p class="lead">Click preview untuk melihat scoreboard dan click edit untuk mengedit</p>
+                        <ul>
+                            <dl class="uk-description-list uk-description-list-divider"></dl>
+                            <li><p>Scoreboard 1</p>
+                            <div uk-lightbox>
+                            <a class="uk-button uk-button-default" data-caption="Click dimanapun untuk menutup gambar, jika kamu pc klik tombol esc" href="https://cdn.discordapp.com/attachments/908367161075044372/934594412514770974/Screenshot_20220123_064355.jpg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                              </svg> Preview</a> <button class="uk-button uk-button-default" onclick="awikwok('scsiji')">Edit</button></li>
+                              <!--anu-->
+                              <!--anu-->
+                            <li><p>Scoreboard 2</p>
+                            <div uk-lightbox>
+                            <a class="uk-button uk-button-default" data-caption="Click dimanapun untuk menutup gambar, jika kamu pc klik tombol esc" href="https://cdn.discordapp.com/attachments/908367161075044372/934594751116750868/Screenshot_20220123_064522.jpg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                              </svg> Preview</a> <button class="uk-button uk-button-default" onclick="awikwok('scloro')">Edit</button></li>
+                              <!--anu-->
+                              <!--anu-->
+                            <li><p>Scoreboard 3</p>
+                            <div uk-lightbox>
+                            <a class="uk-button uk-button-default" data-caption="Click dimanapun untuk menutup gambar, jika kamu pc klik tombol esc" href="https://cdn.discordapp.com/attachments/908367161075044372/934594972634742804/Screenshot_20220123_064620.jpg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                              </svg> Preview</a> <button class="uk-button uk-button-default" onclick="awikwok('sctelu')">Edit</button></li>
+                              <!--anu-->
+                              <!--anu-->
+                            <li><p>Scoreboard 4</p>
+                            <div uk-lightbox>
+                            <a class="uk-button uk-button-default" data-caption="Click dimanapun untuk menutup gambar, jika kamu pc klik tombol esc" href="https://cdn.discordapp.com/attachments/908367161075044372/934595260863094845/Screenshot_20220123_064728.jpg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                              </svg> Preview</a> <button class="uk-button uk-button-default" onclick="awikwok('scpapat')">Edit</button></li>
+                              <!--anu-->
+                              <!--anu-->
+                            <li><p>Scoreboard 5</p>
+                            <div uk-lightbox>
+                            <a class="uk-button uk-button-default" data-caption="Click dimanapun untuk menutup gambar, jika kamu pc klik tombol esc" href="https://cdn.discordapp.com/attachments/908367161075044372/934595530426810388/Screenshot_20220123_064831.jpg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                              </svg> Preview</a> <button class="uk-button uk-button-default" onclick="awikwok('sclimo')">Edit</button></li>
+                              <!--anu-->
+                        </div>
+                        </dl>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <!--anu-->
         <script src="js/aisbir.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -101,5 +156,9 @@
 <p id="text">,{"translate":"Halo bang ini text baru"}</p>
 <p id="selector">,{"selector":"@s"}</p>
 <p id="score">,{"score":{"name":"@s","objective":"nama objectivesmu"}}</p>
-<span id="limit">0</span>
+<p id="scsiji">execute @a~~~titleraw @s title {"rawtext":[{"text":"      §e§lSurvival§r\n\n§a  "},{"selector":"@s"},{"text":"\n\n§l|§r §bMoney:§r "},{"score":{"name":"@s","objective":"money"}},{"text":"$\n§a§l|§r §bPlayer:§r "},{"score":{"name":"@s","objective":"online"}},{"text":"/10\n§a§l|§r §bPing:§r "},{"score":{"name":"@s","objective":"ping"}},{"text":"\n§a§l|§r §bRank:§r §7[Guest]\n\n§ewww.aisbir-nation.xyz"}]}</p>
+<p id="scloro">execute @a~~~titleraw @s title {"rawtext":[{"text":"      §e§lSurvival§r\n\n§a  "},{"selector":"@s"},{"text":"\n\n§l|§r §bMoney:§r "},{"score":{"name":"@s","objective":"money"}},{"text":"$\n§a§l|§r §bPlayer:§r "},{"score":{"name":"@s","objective":"online"}},{"text":"/10\n§a§l|§r §bRank:§r §7[Guest]§e\n\nwww.aisbir-nation.xyz"}]}</p>
+<p id="sctelu">execute @a~~~titleraw @s title {"rawtext":[{"text":"      §6§lSurvival§r\n\nNama:§a "},{"selector":"@s"},{"text":"§r\nRank: §7Default"},{"text":"\n§rMoney:§a "},{"score":{"name":"@s","objective":"money"}},{"text":"§r$\n\n§r    [§7===========§r]     \nTotal players: §a"},{"score":{"name":"@s","objective":"online"}},{"text":"\n\n §eaisbir-nation.xyz"}]}</p>
+<p id="scpapat">execute @a~~~titleraw @s title {"rawtext":[{"text":"      §6§lSurvival§r\n\nNama:§a "},{"selector":"@s"},{"text":"§r\nRank: §7Default"},{"text":"\n§rMoney:§a "},{"score":{"name":"@s","objective":"money"}},{"text":"§r$\n\n§r    [§7===========§r]     \nTotal players: §a"},{"score":{"name":"@s","objective":"online"}},{"text":"\n§rPing:§a "},{"score":{"name":"@s","objective":"ping"}},{"text":"\n\n §eaisbir-nation.xyz"}]}</p>
+<p id="sclimo">execute @a~~~titleraw @s title {"rawtext":[{"text":"         §d§lArena§r\n§7=====================§r\n  §aName:§r "},{"selector":"@s"},{"text":"\n  §aOnline:§r "},{"score":{"name":"@s","objective":"online"}},{"text":"\n  §aCoins: §r"},{"score":{"name":"@s","objective":"money"}},{"text":"\n\n  §aElo:§r "},{"score":{"name":"@s","objective":"elo"}},{"text":"  §aDeath:§r "},{"score":{"name":"@s","objective":"death"}},{"text":"\n§7=====================\n§e     Aisbir-nation.xyz"}]}</p>
 </div>
