@@ -4,35 +4,35 @@
     {
      p = prompt("Tuliskan password dengan benar","");
      if (p=="aisbirgtgtzyalok195AA")
-      {
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'top-end',
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-          didOpen: (toast) => {
-            toast.addEventListener('mouseenter', Swal.stopTimer)
-            toast.addEventListener('mouseleave', Swal.resumeTimer)
-          }
-        })
-        
-        Toast.fire({
-          icon: 'success',
-          title: 'Signed in successfully'
-        })
-        break;     {    lain
-      }
-      }
-     if (coba==1)
-      {
-        alert("Discord.aisbir-nation.xyz to get password");
-       history.go(-1);
-      }
-    coba=coba+1;
+     {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: true,
+        timer: 7000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'info',
+        title: 'Halo user selamat datang di web aisbirkun'
+      })
+      break;     {    lain
     }
-   while (coba<=1)
-  }  
+    }
+   if (coba==1)
+    {
+      alert("Discord.aisbir-nation.xyz to get password");
+     window.close()
+    }
+  coba=coba+1;
+  }
+ while (coba<=1)
+}                  
   function limit() {
     var i = document.getElementById('limit');
     i.innerHTML = parseInt(i.innerHTML)+1
@@ -51,6 +51,10 @@
   function ngopieuy () {
     document.getElementById("anubanghehe").select();
      document.execCommand("copy");                 
-     Swal.fire('command copied successfully');
+     Swal.fire({
+      icon: 'success',
+      title: 'Copyed',
+      text: 'Your work has been saved on your clipboard :3',
+    })
     }
    

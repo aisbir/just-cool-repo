@@ -8,8 +8,8 @@
         const Toast = Swal.mixin({
           toast: true,
           position: 'top-end',
-          showConfirmButton: false,
-          timer: 3000,
+          showConfirmButton: true,
+          timer: 7000,
           timerProgressBar: true,
           didOpen: (toast) => {
             toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -18,16 +18,17 @@
         })
         
         Toast.fire({
-          icon: 'success',
-          title: 'Signed in successfully'
-        })
+          icon: 'info',
+          title: 'Halo user selamat datang di web aisbirkun'
+        });
         break;     {    lain
       }
       }
      if (coba==1)
       {
         alert("Discord.aisbir-nation.xyz to get password");
-       history.go(-1);
+        history.go(-1)
+       window.close()
       }
     coba=coba+1;
     }
@@ -37,8 +38,8 @@ function limit() {
     var i = document.getElementById('limit');
     i.innerHTML = parseInt(i.innerHTML)+1;
    if (i.innerHTML > 150) {
-       window.location.reload()
-       alert("Woops, Limit sudah di target XD")
+    alert("Chill bro")
+    window.location.reload()
    }
   }
    function awikwok(elementId) {
@@ -55,6 +56,9 @@ function limit() {
   function ngopieuy () {
     document.getElementById("anubanghehe").select();
      document.execCommand("copy");                 
-     Swal.fire('command copied successfully');
+     Swal.fire({
+      icon: 'success',
+      title: 'Copyed',
+      text: 'Your work has been saved on your clipboard :3',
+    })
     }
-   
